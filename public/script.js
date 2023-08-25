@@ -1,26 +1,4 @@
-// const todoForm = document.querySelector(".todo-form")
-// const todoInput = document.querySelector(".todo-form input[type='text']")
-const todomain = document.getElementsByTagName("main");
-
-// todoForm.addEventListener("submit", (e) => {
-//     e.preventDefault()
-//     const todoValue = todoInput.value
-
-//     const newList = document.createElement("div")
-//     const newListInnerHtml = `
-//     <div class="todo-list">
-//     <span>${todoValue}</span>
-//     <div class="buttons">
-//     <button class="delete">Delete</button>
-//     <button class="completed">Completed</button>
-//     </div>
-//     </div>
-//     `
-//     newList.innerHTML = newListInnerHtml
-//     todomain.append(newList)
-
-//     todoInput.value = ""
-// })
+const todomain = document.querySelector("main");
 
 todomain.addEventListener("click", (e) => {
   if (e.target.classList.contains("delete")) {
