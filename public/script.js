@@ -1,4 +1,4 @@
-const todomain = document.querySelector("main");
+const todomain = document.querySelector(".main");
 
 todomain.addEventListener("click", (e) => {
   if (e.target.classList.contains("delete")) {
