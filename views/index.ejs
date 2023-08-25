@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("partials/head.ejs") %>
+  <body>
+    <div class="container">
+      <h1>Your Plan For Today ?</h1>
+      <section>
+        <form action="/submit" class="todo-form" method="post">
+          <input
+            type="text"
+            class="inputText"
+            name="text"
+            placeholder="Add Todo"
+          />
+          <input
+            type="submit"
+            value="Add Todo"
+            name="submit"
+            class="inputButton"
+          />
+        </form>
+      </section>
+      <main class="main">
+        <% for(todo of todos){ %>
+        <div class="todo-list">
+          <span><%= todo %></span>
+          <div class="buttons">
+            <button class="delete">Delete</button>
+            <button class="completed">Completed</button>
+          </div>
+        </div>
+        <% } %>
+      </main>
+    </div>
+  </body>
+</html>
